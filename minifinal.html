@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.topnav { 
+overflow: hidden;
+background-color: #333; 
+} 
+
+.topnav a { 
+float: left; 
+display: block;
+color: #f2f2f2; 
+text-align: center; 
+padding: 14px 16px; 
+text-decoration: none; 
+} 
+
+.topnav a:hover { 
+background-color: #ddd; 
+color: black; 
+} 
+.link{
+    color:white;
+}
+.hed{
+    border:10px;
+    padding:10px;
+    background-color:cadetblue;
+    height: 100px;
+    font-size: large;
+    color:black;
+}
+.spic{
+    background-image: url("night2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    height:350px;
+    color:white;
+}
+.tab
+{
+    tab-size: 4;
+    font-size: 20px;
+    font-family: unset; 
+}
+.aboutus{
+    background-color:#555;
+    padding:30px;
+    color:white;
+    font-size:25px ;
+    float:left;
+}
+.services{
+    background-color:white;
+    padding:30px;
+    color:black;
+    font-size:25px;
+    float:right;
+    border:3px solid #333;
+}
+.borwhite{
+    background-color: white;
+    padding:10px;
+    margin-top: 8px;
+}
+.projects{
+    background-color:#555;
+    padding:30px;
+    color:white;
+    font-size:23px;
+    display: inline-block;
+}
+.fou{
+    background-color: white;
+    padding: 20px;
+    color: black;
+    margin-top:20px;
+    margin-bottom: 20px;
+    border:3px solid #333;
+}
+.founder-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.founder img {
+    width: 100%;
+    height: 60%;
+    border-radius: 8px;
+}
+.con{
+    background-color:#555;
+    padding:30px;
+    color:white;
+    text-align: left;
+    font-size:20px;
+}
+#butw-link{ 
+background-color:#555;
+color: white;  
+padding: 14px 25px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+} 
+#butw-link:hover{ 
+background-color:silver; 
+}
+
+#butb-link{ 
+    background-color:cadetblue;
+    color: white;  
+padding: 14px 25px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+} 
+#butb-link:hover{ 
+background-color:white; 
+color:cadetblue;
+}
+footer {
+    background-color: white;
+    color:black;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+</head>
+<body>
+    <div class="hed" >
+        <img src="PRP LOGO.webp" alt="logo" style="float:left; height:75px; width:75px;">
+        <img src="PRP LOGO.webp" alt="hanuman logo" style="float:right; height:75px; width:75px;">
+        <h1 style="text-align:center">PRP CONSTRUCTIONS</h1>
+    </div>
+    
+<div class="topnav">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT US</a>
+    <a href="#service">SERVICES</a>
+    <a href="#project">PROJECTS</a>
+    <a href="#founders">FOUNDERS</a>
+    <a href="#contact">CONTACT US</a>
+    <a onClick="price()">PRICE LIST</a>
+</div>
+<section id="home">
+<div class="spic">
+<h1 style="width:50%; font-size:50px;">Under construction today, your dream home tomorrow</h1><br><br>
+<pre class="tab"><b>Modular Construction</b>       <b>Agumented reality</b>       <b>Saftey technology</b></pre>
+    </div>
+</section>
+<section id="about">
+<div class="aboutus">
+    <img src="aboutpic.jpg" alt="About" style="float:right;height:300px;width:400px; margin:30px">
+    <a href="miniabout.html" class="link"><h1>About us</h1></a>
+    <p style="width:60%;">We have been leading the construction industry for over 20 years, delivering residential, commercial, and industrial projects with high quality and excellence.Our mission is to create spaces that enhance the lives of our clients. Whether it's a small renovation or a large-scale development, we ensure every detail is meticulously executed.</p>
+</div>
+</section>
+<hr class="borwhite"></hr>
+<section id="service">
+<div class="services">
+    <img src="servicephoto.jpg" alt="About" style="float:left;height:400px;width:450px;margin:0px;">
+    <a href="miniservices.html" style="color:black"><h1 style="text-align: right; font-size: 35px;">OUR SERVICES</h1></a>
+    <p style="width:50%;float:right; text-align:justify;font-size:20px;">At PRP Constructions, we offer a comprehensive range of construction services tailored to meet the unique needs of every project. Our expertise spans across residential, commercial, and industrial sectors, providing high-quality solutions from start to finish. Our services include design and build, where we collaborate with clients to bring their vision to life through custom design and efficient construction; project management, ensuring that every phase is executed on time, within budget, and to the highest standards; general contracting, overseeing all aspects of construction to guarantee seamless coordination; renovations and remodeling, transforming existing spaces into modern, functional environments; and sustainable construction, focusing on eco-friendly materials and energy-efficient solutions.</p>
+</div>
+</section>
+<hr class="borwhite"></hr>
+<section id="project">
+<div class="projects">
+    <a href="miniprojects.html" style="color:white"><h1>OUR PROJECTS</h1></a>
+    <p style="text-align: justify; ">At PRP Constructions, we are proud to showcase a diverse range of successful construction projects that highlight our commitment to quality, innovation, and sustainability. From luxurious residential complexes and modern commercial office buildings to large-scale infrastructure developments and eco-friendly retail centers, each project reflects our expertise in delivering high-quality, functional spaces. Whether it's designing energy-efficient homes, creating state-of-the-art industrial facilities, or improving transportation networks, our team consistently exceeds expectations while adhering to the highest standards of safety, efficiency, and environmental responsibility.</p>
+    <img src="p1image.png" alt="p1image" style="float: left;">
+    <img src="p2image.png" alt="p2image" style="float: right;">
+</div>
+
+</section>
+<section id="founders">
+    <div class="fou">
+    <h1 style="text-align: center; font-size: 40px;"><a href="minifounders.html" style="color:black">OUR FOUNDERS</a></h1>
+    <div class="founder-gallery">
+        <div class="founder">
+            <img src="rdj.jpg" alt="founder 1" style="width: 300px; height: 320px;" />
+            <h2 style="text-align: center;"><b>Robert Downey jr</b></h2>
+            <p style="text-align: center;">President and General Manager</p>
+        </div>
+        <div class="founder">
+            <img src="evans3.jpg" alt="founder 2" style="width: 300px; height: 320px;"/>
+            <h2 style="text-align: center;"><b>Chris Evans</b></h2>
+            <p style="text-align: center;">Vice President, HSE</p>
+        </div>
+        <div class="founder">
+            <img src="chris.jpg" alt="founder 3" style="width: 300px; height: 320px;"/>
+            <h2 style="text-align: center;"><b>Chris Hemsworth</b></h2>
+            <p style="text-align: center;">Construction manager</p>
+        </div>
+    </div>
+    <!--<a href="minifounders.html" id="butw-link" style="text-align: center;margin-left: 35%;">CLICK TO KNOW ABOUT OUT FOUNDERS</a>
+-->
+</div>
+</section>
+
+<section id="contact">
+    <div class="con">
+        <h2>Contact Us</h2>
+        <a href="minicontact.html" id="butb-link" style="float:right;">CONTACT US</a>
+        <p style="width: 50%;"> PRP Constructions is here to assist with all your construction needs. Whether you're planning a new project, have questions about our services, or need more information, our team is ready to help. Get in touch with us today, and let's bring your vision to life.
+            <br></p>
+            <p>Phone: 1800-125-258<br>
+            Email: prpconstructions@gmail.com<br>
+            Office Address: St.Peter Berg street,Washigton DC,623104</p>
+            
+    </div>
+</section>
+</div>
+<br>
+<footer>
+    <p>&copy  PRP Constructions pvt.ltd. All rights reserved.</p>
+</footer>
+<script>
+
+function sendmessage(form)
+{
+    let x=document.getElementById('name').value;
+    let y=document.getElementById('email').value;
+    if(x=="")
+    {
+        alert("Please fill the Name");
+    }
+    else if(y=="")
+    {
+        alert("Please fill the Email ID");
+    }
+    else
+    {
+        window.alert("Hey, We recieved your message.\nWe will contact you soon");
+        form.reset();
+    }
+}
+function price()
+{
+    window.alert("Price list is downloaded");
+}
+/*
+background image == moodle link
+links == vtop pdf , w3schools
+about == moodle link
+projects,services == own 
+founders == pcl construction website
+all images == google
+PRP logo == chatgpt
+contact == 
+*/
+
+    </script>
+</body>
+</html>

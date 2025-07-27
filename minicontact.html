@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hed{
+    border:10px solid #333;
+    padding:10px;
+    background-color:cadetblue;
+    font-size: large;
+    color:black;
+}
+.con{
+    background-color:white;
+    padding:30px;
+    color:black;
+    text-align: center;
+}
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+
+#contact input, #contact textarea,#contact select {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: white;
+    color:black;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+    <div class="hed" >
+        <img src="PRP LOGO.webp" alt="logo" style="float:left; height:75px; width:75px;">
+        <img src="PRP LOGO.webp" alt="hanuman logo" style="float:right; height:75px; width:75px;">
+        <h1 style="text-align:center">PRP CONSTRUCTIONS</h1>
+    </div>
+    <section id="contact">
+    <div class="con">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name"></input>
+            <input type="email" id="email" placeholder="Your Email"></input>
+            <select id="cars" name="cars">
+                <option value="" selected>Choose a Service</option>
+                <option value="Project">Project planning</option>
+                <option value="design">Architectural and Structural Design</option>
+                <option value="constr">Construction and Engineering</option>
+                <option value="interior">Interior Design and Fit-Out</option>
+              </select>
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit" onclick="sendmessage(this.form)">Send Message</button>
+        </form>
+    </div>
+    </section>
+    <footer>
+        <p>&copy  PRP Constructions pvt.ltd. All rights reserved.</p>
+    </footer>
+    <script>
+        function sendmessage(form)
+        {
+            let x=document.getElementById('name').value;
+            let y=document.getElementById('email').value;
+            if(x=="")
+            {
+                alert("Please fill the Name");
+            }
+            else if(y=="")
+            {
+                alert("Please fill the Email ID");
+            }
+            else if(! /[@]/.test(y))
+            {
+                alert("Give correct Email address(@ symbol is missing)");
+            }
+            else
+            {
+                window.alert("Hey, We recieved your message.\nWe will contact you soon");
+                form.reset();
+            }
+        }
+        function price()
+        {
+            window.alert("Price list is downloaded");
+        }
+        </script>
+</body>
+
+</html>
+
